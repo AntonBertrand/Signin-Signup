@@ -11,8 +11,9 @@
 <body>
 
     <div class="container">
-        <form action="" id="login-form" class="form-hidden">
+        <form action="" id="login-form" class="">
             <h1>Login</h1>
+            <div class="form-message"></div>
             <div class="input-group">
                 <input type="text" placeholder="Username">
                 <div class="form-error-message"></div>
@@ -23,13 +24,13 @@
             </div>
             <button>Continue</button>
             <p> <a href="#">I cant remember my password</a> </p>
-            <p> <a href="#">Don't have an account? Create One</a> </p>
+            <p> <a href="#" id="link-signup">Don't have an account? Create One</a> </p>
         </form>
 
-        <form action="" id="login-form" class="">
+        <form action="" id="signup-form" class="form-hidden">
             <h1>Registration</h1>
             <div class="input-group">
-                <input type="text" placeholder="Username">
+                <input type="text" id="signupUsername" class="form-input" placeholder="Username">
                 <div class="form-error-message"></div>
             </div>
             <div class="input-group">
@@ -41,7 +42,7 @@
                 <div class="form-error-message"></div>
             </div>
             <button>Create Account</button>
-            <p> <a href="#">Already have an account?</a> </p>
+            <p> <a href="#" id="link-login">Already have an account?</a> </p>
         </form>
     </div>
     
